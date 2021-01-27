@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #232323;
+  margin: 0;
+  min-width: 360px;
+}
+
+.header {
+  background-color: #ffffff;
+}
+.title {
+  height: 180px;
+  padding: 15px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px #939393;
+  animation: color-change 2s infinite;
+  background-color: steelblue;
+  color: #ffffff;
+}
+.tittle--big {
+  line-height: 75px;
+  font-size: 64px;
+}
+
+.options {
+  max-width: 600px;
+  height: 27px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  background-color: white;
+}
+.message {
+  display: inline-block;
+
+  font-size: 16px;
+  padding: 4px 8px;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+.mode__options {
+  display: flex;
+  justify-content: stretch;
+}
+
+#container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.square {
+  background-color: #48d621;
+  width: 30%;
+  margin: 1.66%;
+  padding-top: 30%;
+  float: left;
+  border-radius: 16%;
+  cursor: pointer;
+}
+
+.square:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition-duration: 0.1s;
+}
+
+.mode {
+  color: #4682b4;
+  font-size: 16px;
+  padding: 4px 8px;
+  margin: 0;
+  line-height: 19px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  transition-duration: 0.5s;
+  outline: none;
+  cursor: pointer;
+}
+
+.mode:hover {
+  color: white;
+  background-color: #4682b4;
+}
+@keyframes color-change {
+  0% {
+    text-shadow: 2px 2px 2px rgb(185, 8, 8);
+  }
+  25% {
+    text-shadow: 2px 2px 2px rgb(255, 137, 235);
+  }
+  50% {
+    text-shadow: 2px 2px 2px rgb(108, 108, 233);
+  }
+  0% {
+    text-shadow: 2px 2px 2px rgb(245, 255, 107);
+  }
+  100% {
+    text-shadow: 2px 2px 2px green;
+  }
+}
+
+.mode--selected {
+  color: white;
+  background-color: #4682b4;
+}
+
+/**
+ * Responsive 
+ * 
+*/
+@media (max-width: 700px) {
+  .title {
+    height: 150px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .tittle--big {
+    line-height: 48px;
+    font-size: 40px;
+  }
+}

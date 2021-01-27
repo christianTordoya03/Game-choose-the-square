@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css"></link>
+    <title>Color Game</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">
+        the great
+        <br>
+        <span id = "titleColor" class="tittle--big">RGB(255,0,0)</span>
+        <br>
+        COLOR GAME
+      </h1>
+
+      <nav class="options">
+        <button class = "mode" id="newColor">NEW COLORS</button>
+        <span id = "message" class="message">Try again</span>
+        <div class="mode__options">
+          <button class="mode" onclick="setLimit(3)">EASY</button>
+          <button class="mode mode--selected"onclick="setLimit(6)">HARD</button>
+        </div>
+      </nav>
+    </header>
+   <main id = "container">
+     <div class= "square"></div>
+     <div class= "square"></div>
+     <div class= "square"></div>
+     <div class= "square"></div>
+     <div class= "square"></div>
+     <div class= "square"></div>
+   </main>
+   <script src="./game.js"></script>
+  </body>
+</html>
